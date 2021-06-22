@@ -21,6 +21,7 @@ There are two files inside the directory:
 ## Note to read before running the application:
 There are small steps you must do before running the application:
 1) Choose the match:
+- Insert into python scripts (/API-Football), your api key. 
 - inside the /dataset folder there is the a file called 'Fixture.json', from which you need to choose the l'ID of the match of your preference and then include it inside the python file = 'getMatchStatistics.py'
 For more information please visit the website: [link](https://api-sports.io/documentation/football/v3#section/Introduction)
 
