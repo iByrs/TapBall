@@ -36,6 +36,6 @@ For more information please visit the website: [link](https://api-sports.io/docu
 
 THAT'S ALL!
 
-## Data visualisation 
+## Data visualization 
 To view the chart of the received data, go to localhost:5601 and choose 'tapball' as index
 
