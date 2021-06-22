@@ -14,10 +14,10 @@ First of all, clone the project repository:
     cd tapball*
 starting out the application is really easy. 
 There are two files inside the directory:
-    - build.sh: 
-      + let you build the docker image of the application (you need to do it only the first time).
-    - docker-compose.yml
-      + let you run the application.
+- build.sh: 
+   + let you build the docker image of the application (you need to do it only the first time).
+- docker-compose.yml      
+   + let you run the application.
 ## Note to read before running the application:
 There are small steps you must do before running the application:
 1) Choose the match:
