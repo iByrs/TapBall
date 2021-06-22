@@ -33,7 +33,7 @@ For more information please visit the website: [link](https://api-sports.io/docu
 
 3) Decision Tree
 - In the project there are four decisional trees, you can choose the one you prefer by going to 'main.py' file, from there  you need to change the directory with the directory of the decisional tree of your preference
-
+   + [alt text](https://github.com/iByrs/TapBall/blob/master/docs/img/Tree.png)
 THAT'S ALL!
 
 ## Data visualization 
