@@ -14,13 +14,14 @@ First of all, clone the project repository:
     cd tapball*
 starting out the application is really easy. 
 There are two files inside the directory:
-    + build.sh: 
-      +let you build the docker image of the application (you need to do it only the first time).
-    + docker-compose.yml
-      +let you run the application.
+- build.sh: 
+   + let you build the docker image of the application (you need to do it only the first time).
+- docker-compose.yml      
+   + let you run the application.
 ## Note to read before running the application:
 There are small steps you must do before running the application:
 1) Choose the match:
+- Insert into python scripts (/API-Football), your api key. 
 - inside the /dataset folder there is the a file called 'Fixture.json', from which you need to choose the l'ID of the match of your preference and then include it inside the python file = 'getMatchStatistics.py'
 For more information please visit the website: [link](https://api-sports.io/documentation/football/v3#section/Introduction)
 
@@ -39,4 +40,8 @@ For more information please visit the website: [link](https://api-sports.io/docu
 
 ## Data visualization 
 To view the chart of the received data, go to localhost:5601 and choose 'tapball' as index
+
+
+
+   - ![alt text](https://github.com/iByrs/TapBall/blob/master/docs/img/let-me-know-when-youre-ready-ill-just-be-waiting-here.jpg)
 
