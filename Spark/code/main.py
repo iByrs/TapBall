@@ -33,6 +33,8 @@ es_document = "_doc"
 # KAFKA PARAMETERS
 kafka_server = "kafkaServer:9092"
 kafka_topic = "tapball"
+
+
 # DECISION TREE
 tree = DecisionTreeRegressionModel.load("/Trees/Regressor/TreeRegressorLESS")
 
