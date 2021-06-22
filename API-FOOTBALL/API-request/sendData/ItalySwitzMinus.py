@@ -37,8 +37,8 @@ def getMatchStatistics(json_f, f):
         pass
 
 for i in range(20):
-    path = "../../Dataset/Simulation/ItalySwizt2020/Italy_swiss%d.json" % (i+1)
-    file = "../../Dataset/data.csv"
+    path = "../../../Dataset/Simulation/ItalySwizt2020/Italy_swiss%d.json" % (i+1)
+    file = "../../../Dataset/data.csv"
     with open(path, "r") as match, open(file, "a") as f:
         json_f = json.load(match)
         getMatchStatistics(json_f, f)

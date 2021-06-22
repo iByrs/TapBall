@@ -1,0 +1,160 @@
+{
+    "errors": [], 
+    "parameters": {
+        "fixture": "657705"
+    }, 
+    "get": "fixtures/statistics", 
+    "results": 2, 
+    "paging": {
+        "current": 1, 
+        "total": 1
+    }, 
+    "response": [
+        {
+            "statistics": [
+                {
+                    "type": "Shots on Goal", 
+                    "value": null
+                }, 
+                {
+                    "type": "Shots off Goal", 
+                    "value": null
+                }, 
+                {
+                    "type": "Total Shots", 
+                    "value": null
+                }, 
+                {
+                    "type": "Blocked Shots", 
+                    "value": null
+                }, 
+                {
+                    "type": "Shots insidebox", 
+                    "value": null
+                }, 
+                {
+                    "type": "Shots outsidebox", 
+                    "value": null
+                }, 
+                {
+                    "type": "Fouls", 
+                    "value": null
+                }, 
+                {
+                    "type": "Corner Kicks", 
+                    "value": null
+                }, 
+                {
+                    "type": "Offsides", 
+                    "value": null
+                }, 
+                {
+                    "type": "Ball Possession", 
+                    "value": "100%"
+                }, 
+                {
+                    "type": "Yellow Cards", 
+                    "value": null
+                }, 
+                {
+                    "type": "Red Cards", 
+                    "value": null
+                }, 
+                {
+                    "type": "Goalkeeper Saves", 
+                    "value": null
+                }, 
+                {
+                    "type": "Total passes", 
+                    "value": 3
+                }, 
+                {
+                    "type": "Passes accurate", 
+                    "value": 1
+                }, 
+                {
+                    "type": "Passes %", 
+                    "value": "33%"
+                }
+            ], 
+            "team": {
+                "logo": "https://media.api-sports.io/football/teams/770.png", 
+                "id": 770, 
+                "name": "Czech Republic"
+            }
+        }, 
+        {
+            "statistics": [
+                {
+                    "type": "Shots on Goal", 
+                    "value": null
+                }, 
+                {
+                    "type": "Shots off Goal", 
+                    "value": null
+                }, 
+                {
+                    "type": "Total Shots", 
+                    "value": null
+                }, 
+                {
+                    "type": "Blocked Shots", 
+                    "value": null
+                }, 
+                {
+                    "type": "Shots insidebox", 
+                    "value": null
+                }, 
+                {
+                    "type": "Shots outsidebox", 
+                    "value": null
+                }, 
+                {
+                    "type": "Fouls", 
+                    "value": null
+                }, 
+                {
+                    "type": "Corner Kicks", 
+                    "value": null
+                }, 
+                {
+                    "type": "Offsides", 
+                    "value": null
+                }, 
+                {
+                    "type": "Ball Possession", 
+                    "value": "0%"
+                }, 
+                {
+                    "type": "Yellow Cards", 
+                    "value": null
+                }, 
+                {
+                    "type": "Red Cards", 
+                    "value": null
+                }, 
+                {
+                    "type": "Goalkeeper Saves", 
+                    "value": null
+                }, 
+                {
+                    "type": "Total passes", 
+                    "value": null
+                }, 
+                {
+                    "type": "Passes accurate", 
+                    "value": null
+                }, 
+                {
+                    "type": "Passes %", 
+                    "value": null
+                }
+            ], 
+            "team": {
+                "logo": "https://media.api-sports.io/football/teams/10.png", 
+                "id": 10, 
+                "name": "England"
+            }
+        }
+    ]
+}
