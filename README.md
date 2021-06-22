@@ -14,10 +14,10 @@ First of all, clone the project repository:
     cd tapball*
 starting out the application is really easy. 
 There are two files inside the directory:
-    - build.sh: 
-    let you build the docker image of the application (you need to do it only the first time).
-    - docker-compose.yml
-    let you run the application.
+    + build.sh: 
+      +let you build the docker image of the application (you need to do it only the first time).
+    + docker-compose.yml
+      +let you run the application.
 ## Note to read before running the application:
 There are small steps you must do before running the application:
 1) Choose the match:
@@ -27,9 +27,9 @@ For more information please visit the website: [link](https://api-sports.io/docu
 - Inside the /Dataset directory there are simulated real time match from which I requested API the data every five minute. So, in this way it is possible to emulate the API response and the matches.
 2) Elasticsearch memory problem:
 - It is possible to edit che maximum storage taken up by Elasticsearch by going inside the docker-compose.yml and then in the Elasticsearch section and edit these parameters: 
-- discovery.type=single-node 
-- ES_JAVA_OPTS=-Xms%dg -Xmx%dg
-- where %d = the edit number of RAM
+   + discovery.type=single-node 
+   + ES_JAVA_OPTS=-Xms%dg -Xmx%dg
+   + where %d = the edit number of RAM
 
 3) Decision Tree
 - In the project there are four decisional trees, you can choose the one you prefer by going to 'main.py' file, from there  you need to change the directory with the directory of the decisional tree of your preference
