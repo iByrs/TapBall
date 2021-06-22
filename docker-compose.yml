@@ -91,6 +91,16 @@ services:
             - 5601:5601
         depends_on: 
             - elasticSearch 
+#    api-football:
+#        image: tapball:api
+#        container_name: api
+#        environment: 
+#            - PYTHON_APP=Statistics.py
+#        depends_on: 
+#            - logstash
+#        volumes: 
+#            - ./Dataset:/Dataset
+#            - ./API-FOOTBALL/API-request:/code
 networks: 
     tap:
         name: tap
