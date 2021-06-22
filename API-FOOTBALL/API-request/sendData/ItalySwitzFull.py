@@ -39,3 +39,6 @@ for i in range(20):
         time.sleep(10)
     match.close()
     f.close()        
+
+
+    #"../../../Dataset/Simulation/CzechEngland2020/CzechEnglash%d.json" 

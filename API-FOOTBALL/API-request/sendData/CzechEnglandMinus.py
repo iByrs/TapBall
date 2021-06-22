@@ -23,14 +23,20 @@ def getMatchStatistics(json_f, f):
                     row2.append(value)
                 else:
                     row2.append(0)
-        writer.writerow(row)
-        writer.writerow(row2)  
+        array1 = row.copy()
+        array2 = row2.copy()
+        for i in range(6):
+            if i != 0:
+                array1[i] = (int(row[i])-int(row2[i]))
+                array2[i] = (int(row2[i])-int(row[i]))
+        writer.writerow(array1)
+        writer.writerow(array2)
     except:
         print('errore')
         pass
 
 for i in range(20):
-    path = "../../../Dataset/Simulation/CzechEngland2020/CzechEngland%d.json" % (i+1)
+    path = "../../../Dataset/Simulation/CzechEngland2020/CzechEnglash%d.json" % (i+1)
     file = "../../../Dataset/data.csv"
     with open(path, "r") as match, open(file, "a") as f:
         json_f = json.load(match)
@@ -38,4 +44,4 @@ for i in range(20):
         match.close()
         time.sleep(10)
     match.close()
-    f.close()        
+    f.close()  

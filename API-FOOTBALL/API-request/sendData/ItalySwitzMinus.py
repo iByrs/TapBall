@@ -31,7 +31,7 @@ def getMatchStatistics(json_f, f):
                 array1[i] = (int(row[i])-int(row2[i]))
                 array2[i] = (int(row2[i])-int(row[i]))
         writer.writerow(array1)
-        writer.writerow(array2)  
+        writer.writerow(array2)
     except:
         print('errore')
         pass
