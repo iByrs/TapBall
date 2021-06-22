@@ -1,0 +1,100 @@
+version: '3.7'
+services:
+    elasticSearch:
+        build: .
+        image: tapball:elasticsearch
+        container_name: elasticSearch
+        networks: 
+            tap:
+                ipv4_address: 10.0.100.30
+        ports: 
+            - 9200:9200
+            - 9300:9300
+        environment: 
+            - discovery.type=single-node
+            - ES_JAVA_OPTS=-Xms2g -Xmx2g
+    zookeeper:
+        build: .
+        image: tapball:kafka
+        container_name: zookeeper
+        ports: 
+            - 2181:2181
+        networks: 
+            tap:
+                ipv4_address: 10.0.100.22
+        environment: 
+            - KAFKA_ACTION=start-zk
+    kafkaServer:
+        build: .
+        image: tapball:kafka
+        container_name: kafkaServer
+        ports: 
+            - 9092:9092
+        networks: 
+            tap:
+                ipv4_address: 10.0.100.23
+        environment: 
+            - KAFKA_ACTION=start-kafka
+        depends_on: 
+            - zookeeper
+    kafkaTopic:
+        build: .
+        image: tapball:kafka
+        container_name: kafkaTopic
+        networks: 
+            tap:
+                ipv4_address: 10.0.100.24
+        environment: 
+            - KAFKA_ACTION=create-topic
+            - KAFKA_SERVER=10.0.100.23
+            - KAFKA_TOPIC=tapball
+        depends_on: 
+            - kafkaServer
+    logstash:
+        build: .
+        image: tapball:logstash
+        container_name: logstash
+        networks: 
+            tap:
+                ipv4_address: 10.0.100.25
+        volumes: 
+            - ./Dataset:/myvol
+        depends_on: 
+            - kafkaServer
+    spark:
+        image: tapball:spark
+        container_name: sparkSubmit
+        networks: 
+            - tap
+        depends_on: 
+            - kafkaServer
+            - elasticSearch
+            - logstash
+        environment: 
+            - SPARK_ACTION=spark-submit-python
+            - SPARK_PACK=org.apache.spark:spark-sql-kafka-0-10_2.12:3.1.1
+            - SPARK_FILE=main.py
+            - SPARK_ES=org.elasticsearch:elasticsearch-spark-30_2.12:7.12.1
+        ports: 
+            - 4040:4040
+        volumes: 
+            - ./Dataset:/Dataset
+            - ./Spark/Trees:/Trees
+            - ./Spark/code:/code
+    kibana:
+        image: tapball:kibana
+        container_name: kibana
+        networks: 
+            tap:
+                ipv4_address: 10.0.100.31
+        ports: 
+            - 5601:5601
+        depends_on: 
+            - elasticSearch 
+networks: 
+    tap:
+        name: tap
+        driver: bridge
+        ipam:
+            config:
+                - subnet: 10.0.100.1/24

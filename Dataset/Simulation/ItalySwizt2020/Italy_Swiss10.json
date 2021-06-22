@@ -1,0 +1,160 @@
+{
+    "errors": [], 
+    "parameters": {
+        "fixture": "657688"
+    }, 
+    "get": "fixtures/statistics", 
+    "results": 2, 
+    "paging": {
+        "current": 1, 
+        "total": 1
+    }, 
+    "response": [
+        {
+            "statistics": [
+                {
+                    "type": "Shots on Goal", 
+                    "value": 1
+                }, 
+                {
+                    "type": "Shots off Goal", 
+                    "value": 4
+                }, 
+                {
+                    "type": "Total Shots", 
+                    "value": 7
+                }, 
+                {
+                    "type": "Blocked Shots", 
+                    "value": 2
+                }, 
+                {
+                    "type": "Shots insidebox", 
+                    "value": 4
+                }, 
+                {
+                    "type": "Shots outsidebox", 
+                    "value": 3
+                }, 
+                {
+                    "type": "Fouls", 
+                    "value": 4
+                }, 
+                {
+                    "type": "Corner Kicks", 
+                    "value": 3
+                }, 
+                {
+                    "type": "Offsides", 
+                    "value": 1
+                }, 
+                {
+                    "type": "Ball Possession", 
+                    "value": "52%"
+                }, 
+                {
+                    "type": "Yellow Cards", 
+                    "value": null
+                }, 
+                {
+                    "type": "Red Cards", 
+                    "value": null
+                }, 
+                {
+                    "type": "Goalkeeper Saves", 
+                    "value": null
+                }, 
+                {
+                    "type": "Total passes", 
+                    "value": 273
+                }, 
+                {
+                    "type": "Passes accurate", 
+                    "value": 244
+                }, 
+                {
+                    "type": "Passes %", 
+                    "value": "89%"
+                }
+            ], 
+            "team": {
+                "logo": "https://media.api-sports.io/football/teams/768.png", 
+                "id": 768, 
+                "name": "Italy"
+            }
+        }, 
+        {
+            "statistics": [
+                {
+                    "type": "Shots on Goal", 
+                    "value": null
+                }, 
+                {
+                    "type": "Shots off Goal", 
+                    "value": 1
+                }, 
+                {
+                    "type": "Total Shots", 
+                    "value": 1
+                }, 
+                {
+                    "type": "Blocked Shots", 
+                    "value": null
+                }, 
+                {
+                    "type": "Shots insidebox", 
+                    "value": null
+                }, 
+                {
+                    "type": "Shots outsidebox", 
+                    "value": 1
+                }, 
+                {
+                    "type": "Fouls", 
+                    "value": 6
+                }, 
+                {
+                    "type": "Corner Kicks", 
+                    "value": 1
+                }, 
+                {
+                    "type": "Offsides", 
+                    "value": 1
+                }, 
+                {
+                    "type": "Ball Possession", 
+                    "value": "48%"
+                }, 
+                {
+                    "type": "Yellow Cards", 
+                    "value": null
+                }, 
+                {
+                    "type": "Red Cards", 
+                    "value": null
+                }, 
+                {
+                    "type": "Goalkeeper Saves", 
+                    "value": null
+                }, 
+                {
+                    "type": "Total passes", 
+                    "value": 257
+                }, 
+                {
+                    "type": "Passes accurate", 
+                    "value": 223
+                }, 
+                {
+                    "type": "Passes %", 
+                    "value": "87%"
+                }
+            ], 
+            "team": {
+                "logo": "https://media.api-sports.io/football/teams/15.png", 
+                "id": 15, 
+                "name": "Switzerland"
+            }
+        }
+    ]
+}
