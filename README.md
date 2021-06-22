@@ -18,7 +18,7 @@ There are two files inside the directory:
    + let you build the docker image of the application (you need to do it only the first time).
 - docker-compose.yml      
    + let you run the application.
-   ![alt text](https://github.com/iByrs/TapBall/blob/master/docs/img/let-me-know-when-youre-ready-ill-just-be-waiting-here.jpg)
+   + ![alt text](https://github.com/iByrs/TapBall/blob/master/docs/img/let-me-know-when-youre-ready-ill-just-be-waiting-here.jpg)
 ## Note to read before running the application:
 There are small steps you must do before running the application:
 1) Choose the match:
